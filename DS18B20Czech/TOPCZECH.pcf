@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 28 12:20:53 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "R" LOCATE = SITE "B18" LEVEL 1;
+COMP "DQ" LOCATE = SITE "M15" LEVEL 1;
+COMP "TX" LOCATE = SITE "P9" LEVEL 1;
+COMP "a_to_g<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "a_to_g<1>" LOCATE = SITE "J17" LEVEL 1;
+COMP "a_to_g<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "a_to_g<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "a_to_g<4>" LOCATE = SITE "D17" LEVEL 1;
+COMP "a_to_g<5>" LOCATE = SITE "F18" LEVEL 1;
+COMP "a_to_g<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "MHZ50" LOCATE = SITE "B8" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "R4" LEVEL 1;
+NET "MHZ50_BUFGP/IBUFG" BEL "MHZ50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+vhdtdtfi -prj DS18B20Czech -o "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/DS18B20.vhi" -module DS18B20 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ds18b20.vhd 

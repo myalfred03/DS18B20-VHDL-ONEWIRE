@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.xst" -ofn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-5 "TOPCZECH.ngc" TOPCZECH.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPCZECH_map.ncd TOPCZECH.ngd TOPCZECH.pcf 
+par -w -intstyle ise -ol high -t 1 TOPCZECH_map.ncd TOPCZECH.ncd TOPCZECH.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPCZECH.twx TOPCZECH.ncd -o TOPCZECH.twr TOPCZECH.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f TOPCZECH.ut TOPCZECH.ncd 
+xst -intstyle ise -ifn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.xst" -ofn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-5 "TOPCZECH.ngc" TOPCZECH.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPCZECH_map.ncd TOPCZECH.ngd TOPCZECH.pcf 
+par -w -intstyle ise -ol high -t 1 TOPCZECH_map.ncd TOPCZECH.ncd TOPCZECH.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPCZECH.twx TOPCZECH.ncd -o TOPCZECH.twr TOPCZECH.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f TOPCZECH.ut TOPCZECH.ncd 
+xst -intstyle ise -ifn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.xst" -ofn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-5 "TOPCZECH.ngc" TOPCZECH.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPCZECH_map.ncd TOPCZECH.ngd TOPCZECH.pcf 
+par -w -intstyle ise -ol high -t 1 TOPCZECH_map.ncd TOPCZECH.ncd TOPCZECH.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPCZECH.twx TOPCZECH.ncd -o TOPCZECH.twr TOPCZECH.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f TOPCZECH.ut TOPCZECH.ncd 
+xst -intstyle ise -ifn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.xst" -ofn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-5 "TOPCZECH.ngc" TOPCZECH.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPCZECH_map.ncd TOPCZECH.ngd TOPCZECH.pcf 
+par -w -intstyle ise -ol high -t 1 TOPCZECH_map.ncd TOPCZECH.ncd TOPCZECH.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPCZECH.twx TOPCZECH.ncd -o TOPCZECH.twr TOPCZECH.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f TOPCZECH.ut TOPCZECH.ncd 
+xst -intstyle ise -ifn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.xst" -ofn "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-5 "TOPCZECH.ngc" TOPCZECH.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPCZECH_map.ncd TOPCZECH.ngd TOPCZECH.pcf 
+par -w -intstyle ise -ol high -t 1 TOPCZECH_map.ncd TOPCZECH.ncd TOPCZECH.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPCZECH.twx TOPCZECH.ncd -o TOPCZECH.twr TOPCZECH.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f TOPCZECH.ut TOPCZECH.ncd 

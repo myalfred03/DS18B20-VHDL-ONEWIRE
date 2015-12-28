@@ -1,0 +1,1165 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: TOPCZECH.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOPCZECH.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOPCZECH"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : TOPCZECH
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART_baudRateGenerator.vhd" in Library work.
+Entity <uart_baudrategenerator> compiled.
+Entity <uart_baudrategenerator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART_transmitter.vhd" in Library work.
+Architecture behavioral of Entity uart_transmitter is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART.vhd" in Library work.
+Architecture structure of Entity uart is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" in Library work.
+Architecture behavioral of Entity transmitcontroler is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/ds18b20.vhd" in Library work.
+Architecture behavioral of Entity ds18b20 is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/divider1MHz.vhd" in Library work.
+Architecture behavioral of Entity divider1mhz is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/CRC.vhd" in Library work.
+Architecture behavioral of Entity crc is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/Binary_To_BCD_16b.vhd" in Library work.
+Architecture behavioral of Entity binary_to_bcd_16b is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/X7seg.vhd" in Library work.
+Architecture behavioral of Entity x7seg is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitter.vhd" in Library work.
+Architecture structure of Entity transmitter is up to date.
+Compiling vhdl file "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.vhd" in Library work.
+Architecture behavioral of Entity topczech is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOPCZECH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DS18B20> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <divider1MHz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CRC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Binary_To_BCD_16b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <X7seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <transmitter> in library <work> (architecture <structure>).
+
+Analyzing hierarchy for entity <UART> in library <work> (architecture <structure>).
+
+Analyzing hierarchy for entity <transmitControler> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UART_baudRateGenerator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UART_transmitter> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOPCZECH> in library <work> (Architecture <behavioral>).
+Entity <TOPCZECH> analyzed. Unit <TOPCZECH> generated.
+
+Analyzing Entity <DS18B20> in library <work> (Architecture <behavioral>).
+Entity <DS18B20> analyzed. Unit <DS18B20> generated.
+
+Analyzing Entity <divider1MHz> in library <work> (Architecture <behavioral>).
+Entity <divider1MHz> analyzed. Unit <divider1MHz> generated.
+
+Analyzing Entity <CRC> in library <work> (Architecture <behavioral>).
+Entity <CRC> analyzed. Unit <CRC> generated.
+
+Analyzing Entity <Binary_To_BCD_16b> in library <work> (Architecture <behavioral>).
+Entity <Binary_To_BCD_16b> analyzed. Unit <Binary_To_BCD_16b> generated.
+
+Analyzing Entity <X7seg> in library <work> (Architecture <behavioral>).
+Entity <X7seg> analyzed. Unit <X7seg> generated.
+
+Analyzing Entity <transmitter> in library <work> (Architecture <structure>).
+Entity <transmitter> analyzed. Unit <transmitter> generated.
+
+Analyzing Entity <UART> in library <work> (Architecture <structure>).
+Entity <UART> analyzed. Unit <UART> generated.
+
+Analyzing Entity <UART_baudRateGenerator> in library <work> (Architecture <behavioral>).
+Entity <UART_baudRateGenerator> analyzed. Unit <UART_baudRateGenerator> generated.
+
+Analyzing Entity <UART_transmitter> in library <work> (Architecture <behavioral>).
+Entity <UART_transmitter> analyzed. Unit <UART_transmitter> generated.
+
+Analyzing Entity <transmitControler> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 135: Width mismatch. <stringToSend_T1> has a width of 48 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 136: Width mismatch. <stringToSend_T2> has a width of 48 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 137: Width mismatch. <stringToSend_H1> has a width of 48 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 138: Width mismatch. <stringToSend_H2> has a width of 48 bits but assigned expression is 6-bit wide.
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd" line 79: Mux is complete : default of case is discarded
+INFO:Xst:2679 - Register <stringToSend<26>> in unit <transmitControler> has a constant value of 00001010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <stringToSend<25>> in unit <transmitControler> has a constant value of 00001101 during circuit operation. The register is replaced by logic.
+Entity <transmitControler> analyzed. Unit <transmitControler> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DS18B20>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/ds18b20.vhd".
+    Found finite state machine <FSM_0> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk1m                     (rising_edge)        |
+    | Clock enable       | flag$cmp_eq0000           (positive)           |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <write_high_flag>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clk1m                     (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 49                                             |
+    | Inputs             | 33                                             |
+    | Outputs            | 11                                             |
+    | Clock              | clk1m                     (rising_edge)        |
+    | Power Up State     | wait_800ms                                     |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <write_low_flag>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 5                                              |
+    | Clock              | clk1m                     (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <read_bit_flag>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk1m                     (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <crc_en>.
+    Found 1-bit tristate buffer for signal <ds_data_bus>.
+    Found 72-bit register for signal <dataOut>.
+    Found 7-bit register for signal <bit_cnt>.
+    Found 7-bit adder for signal <bit_cnt$addsub0000> created at line 169.
+    Found 72-bit register for signal <data>.
+    Found 7-bit register for signal <GET_DATA_CNT>.
+    Found 7-bit adder for signal <GET_DATA_CNT$addsub0000> created at line 142.
+    Found 20-bit up counter for signal <i>.
+    Found 1-bit register for signal <Mtridata_ds_data_bus> created at line 83.
+    Found 7-bit comparator greater for signal <Mtridata_ds_data_bus$cmp_gt0000>.
+    Found 1-bit register for signal <Mtrien_ds_data_bus> created at line 83.
+    Found 1-bit register for signal <presence_signal>.
+    Found 1-bit register for signal <S_reset>.
+    Found 7-bit comparator lessequal for signal <state$cmp_le0000>.
+    Found 4-bit register for signal <WRITE_BYTE_CNT>.
+    Found 4-bit adder for signal <WRITE_BYTE_CNT$addsub0000> created at line 194.
+    Found 8-bit register for signal <write_command>.
+    Found 1-bit 8-to-1 multiplexer for signal <write_command$mux0000> created at line 189.
+    Summary:
+	inferred   5 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 175 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <DS18B20> synthesized.
+
+
+Synthesizing Unit <divider1MHz>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/divider1MHz.vhd".
+    Found 1-bit register for signal <clk_out>.
+    Found 7-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <divider1MHz> synthesized.
+
+
+Synthesizing Unit <CRC>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/CRC.vhd".
+WARNING:Xst:1780 - Signal <data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_5> for signal <crc_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit register for signal <dataOut>.
+    Found 1-bit register for signal <dataValid>.
+    Found 7-bit comparator less for signal <crc_state$cmp_lt0000> created at line 88.
+    Found 8-bit register for signal <CRC_val>.
+    Found 1-bit xor2 for signal <CRC_val_2$xor0000> created at line 91.
+    Found 1-bit xor2 for signal <CRC_val_3$xor0000> created at line 92.
+    Found 1-bit xor2 for signal <CRC_val_7$xor0000> created at line 90.
+    Found 1-bit 72-to-1 multiplexer for signal <dataIn$mux0000> created at line 90.
+    Found 72-bit comparator not equal for signal <dataOut$cmp_ne0000> created at line 110.
+    Found 7-bit register for signal <i>.
+    Found 7-bit adder for signal <i$addsub0000> created at line 101.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <CRC> synthesized.
+
+
+Synthesizing Unit <Binary_To_BCD_16b>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/Binary_To_BCD_16b.vhd".
+    Found 16x8-bit ROM for signal <point_out>.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0000> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0001> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0002> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0003> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0004> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0005> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0006> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0007> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0008> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0009> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0010> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0011> created at line 82.
+    Found 5-bit comparator greater for signal <Z_19$cmp_gt0012> created at line 82.
+    Found 4-bit adder for signal <Z_19_16$add0000> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0001> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0002> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0003> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0004> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0005> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0006> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0007> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0008> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0009> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0010> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0011> created at line 83.
+    Found 4-bit adder for signal <Z_19_16$add0012> created at line 83.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0000> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0001> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0002> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0003> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0004> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0005> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0006> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0007> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0008> created at line 85.
+    Found 5-bit comparator greater for signal <Z_23$cmp_gt0009> created at line 85.
+    Found 4-bit adder for signal <Z_23_20$add0000> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0001> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0002> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0003> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0004> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0005> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0006> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0007> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0008> created at line 86.
+    Found 4-bit adder for signal <Z_23_20$add0009> created at line 86.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0000> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0001> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0002> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0003> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0004> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0005> created at line 88.
+    Found 5-bit comparator greater for signal <Z_27$cmp_gt0006> created at line 88.
+    Found 4-bit adder for signal <Z_27_24$add0000> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0001> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0002> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0003> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0004> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0005> created at line 89.
+    Found 4-bit adder for signal <Z_27_24$add0006> created at line 89.
+    Found 5-bit comparator greater for signal <Z_28$cmp_gt0000> created at line 92.
+    Found 5-bit comparator greater for signal <Z_28$cmp_gt0001> created at line 92.
+    Found 5-bit comparator greater for signal <Z_28$cmp_gt0002> created at line 92.
+    Found 5-bit comparator greater for signal <Z_29$cmp_gt0000> created at line 92.
+    Found 4-bit adder for signal <Z_31_28$add0000> created at line 93.
+    Found 4-bit adder for signal <Z_31_28$add0001> created at line 93.
+    Found 4-bit adder for signal <Z_31_28$add0002> created at line 93.
+    Found 4-bit adder for signal <Z_31_28$add0003> created at line 93.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  34 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
+Unit <Binary_To_BCD_16b> synthesized.
+
+
+Synthesizing Unit <X7seg>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/X7seg.vhd".
+WARNING:Xst:646 - Signal <aen> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x7-bit ROM for signal <a_to_g>.
+    Found 20-bit up counter for signal <clkdiv>.
+    Found 4-bit 4-to-1 multiplexer for signal <digit>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+Unit <X7seg> synthesized.
+
+
+Synthesizing Unit <transmitControler>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitControler.vhd".
+    Register <stringToSend<18>> equivalent to <stringToSend<12>> has been removed
+    Register <stringToSend<24>> equivalent to <stringToSend<12>> has been removed
+    Register <stringToSend<6>> equivalent to <stringToSend<12>> has been removed
+    Found finite state machine <FSM_6> for signal <ctrl_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | enable                    (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <$n0022<2>> created at line 175.
+    Found 16x16-bit ROM for signal <dataToSend_H1_3_0$rom0000>.
+    Found 16x16-bit ROM for signal <dataToSend_H2_7_4$rom0000>.
+    Found 16x16-bit ROM for signal <dataToSend_H1_7_4$rom0000>.
+    Found 16x16-bit ROM for signal <dataToSend_H2_11_8$rom0000>.
+    Found 16x8-bit ROM for signal <stringToSend_T2$mux0002> created at line 63.
+    Found 16x8-bit ROM for signal <stringToSend_T2$mux0001> created at line 63.
+    Found 16x8-bit ROM for signal <stringToSend_T2$mux0000> created at line 63.
+    Found 16x16-bit ROM for signal <dataToSend_H2_3_0$rom0000>.
+    Found 16x8-bit ROM for signal <stringToSend_T1$mux0002> created at line 63.
+    Found 16x8-bit ROM for signal <stringToSend_T1$mux0001> created at line 63.
+    Found 16x8-bit ROM for signal <stringToSend_T1$mux0000> created at line 63.
+    Found 4x8-bit ROM for signal <$n0034<0>>.
+    Found 4x8-bit ROM for signal <$n0037<0>>.
+    Found 1-bit register for signal <transmitRequest>.
+    Found 8-bit register for signal <parallelDataOut>.
+    Found 32-bit 4-to-1 multiplexer for signal <$n0034<46:43>>.
+    Found 32-bit 4-to-1 multiplexer for signal <$n0037<46:43>>.
+    Found 5-bit register for signal <char_send_cnt>.
+    Found 5-bit adder for signal <char_send_cnt$addsub0000> created at line 201.
+    Found 5-bit comparator less for signal <ctrl_state$cmp_lt0000> created at line 197.
+    Found 1-bit register for signal <dataReady_H1>.
+    Found 1-bit register for signal <dataReady_H2>.
+    Found 1-bit register for signal <dataReady_T1>.
+    Found 1-bit register for signal <dataReady_T2>.
+    Found 13-bit register for signal <dataToSend_H1>.
+    Found 13-bit register for signal <dataToSend_H2>.
+    Found 14-bit register for signal <dataToSend_T1>.
+    Found 14-bit register for signal <dataToSend_T2>.
+    Found 5-bit comparator greatequal for signal <parallelDataOut$cmp_ge0000> created at line 197.
+    Found 8-bit 26-to-1 multiplexer for signal <parallelDataOut$mux0000> created at line 198.
+    Found 40-bit register for signal <stringToSend<1:5>>.
+    Found 88-bit register for signal <stringToSend<7:17>>.
+    Found 40-bit register for signal <stringToSend<19:23>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  14 ROM(s).
+	inferred 240 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  72 Multiplexer(s).
+Unit <transmitControler> synthesized.
+
+
+Synthesizing Unit <UART_baudRateGenerator>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART_baudRateGenerator.vhd".
+    Found 1-bit register for signal <baudRateEnable>.
+    Found 10-bit up counter for signal <clockCount>.
+    Found 10-bit adder for signal <clockCount$add0000> created at line 49.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <UART_baudRateGenerator> synthesized.
+
+
+Synthesizing Unit <UART_transmitter>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART_transmitter.vhd".
+    Found finite state machine <FSM_7> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | baudRateEnable            (positive)           |
+    | Reset              | enable                    (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <txIsReady>.
+    Found 1-bit register for signal <serialDataOut>.
+    Found 3-bit register for signal <bitToSend>.
+    Found 3-bit adder for signal <bitToSend$addsub0000> created at line 96.
+    Found 8-bit register for signal <dataToTx>.
+    Found 1-bit register for signal <go>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <UART_transmitter> synthesized.
+
+
+Synthesizing Unit <UART>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/UART.vhd".
+Unit <UART> synthesized.
+
+
+Synthesizing Unit <transmitter>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitter.vhd".
+Unit <transmitter> synthesized.
+
+
+Synthesizing Unit <TOPCZECH>.
+    Related source file is "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/TOPCZECH.vhd".
+WARNING:Xst:1306 - Output <LED<7>> is never assigned.
+WARNING:Xst:1306 - Output <LED<5:0>> is never assigned.
+WARNING:Xst:646 - Signal <Y<18:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <REQUEST> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <TOPCZECH> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 16
+ 16x16-bit ROM                                         : 5
+ 16x7-bit ROM                                          : 1
+ 16x8-bit ROM                                          : 8
+ 4x8-bit ROM                                           : 2
+# Adders/Subtractors                                   : 41
+ 10-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 35
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 3
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 132
+ 1-bit register                                        : 96
+ 13-bit register                                       : 2
+ 14-bit register                                       : 2
+ 16-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 7-bit register                                        : 3
+ 72-bit register                                       : 1
+ 8-bit register                                        : 24
+# Comparators                                          : 40
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator greater                              : 34
+ 5-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
+ 7-bit comparator lessequal                            : 1
+ 72-bit comparator not equal                           : 1
+# Multiplexers                                         : 12
+ 1-bit 72-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 26-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 8
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_7> for best encoding.
+Optimizing FSM <U6/UART_1/transmitter/txState/FSM> on signal <txState[1:2]> with gray encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ idle           | 00
+ send_start_bit | 01
+ send_data_bits | 11
+ send_stop_bit  | 10
+----------------------------
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <U6/transmitControler_1/ctrl_state/FSM> on signal <ctrl_state[1:2]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 00
+ prepare_sequence | 01
+ prepare_char     | 10
+ send_char        | 11
+------------------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <U3/crc_state/FSM> on signal <crc_state[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ crc_calc  | 01
+ crc_check | 10
+-----------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <U1/read_bit_flag/FSM> on signal <read_bit_flag[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <U1/write_low_flag/FSM> on signal <write_low_flag[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <U1/state/FSM> on signal <state[1:9]> with one-hot encoding.
+-------------------------
+ State      | Encoding
+-------------------------
+ wait_800ms | 000000001
+ reset      | 000000100
+ presence   | 000000010
+ send       | 000001000
+ write_byte | 000010000
+ write_low  | 010000000
+ write_high | 100000000
+ get_data   | 000100000
+ read_bit   | 001000000
+-------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U1/write_high_flag/FSM> on signal <write_high_flag[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U1/flag/FSM> on signal <flag[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 001   | 000010
+ 010   | 000100
+ 011   | 001000
+ 100   | 010000
+ 101   | 100000
+-------------------
+INFO:Xst:2261 - The FF/Latch <stringToSend_12_2> in Unit <transmitControler_1> is equivalent to the following 2 FFs/Latches, which will be removed : <stringToSend_12_6> <stringToSend_12_7> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_12_0> in Unit <transmitControler_1> is equivalent to the following 4 FFs/Latches, which will be removed : <stringToSend_12_1> <stringToSend_12_3> <stringToSend_12_4> <stringToSend_12_5> 
+WARNING:Xst:1710 - FF/Latch <write_command_0> (without init value) has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtridata_ds_data_bus> (without init value) has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <stringToSend_12_2> has a constant value of 0 in block <transmitControler_1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <transmitControler>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__n0022<2>> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataToSend_H1_3_0_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataToSend_H2_7_4_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataToSend_H1_7_4_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataToSend_H2_11_8_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T2_mux0002> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T2_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T2_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataToSend_H2_3_0_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T1_mux0002> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T1_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_stringToSend_T1_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__n0034<0>> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__n0037<0>> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <transmitControler> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 8
+# ROMs                                                 : 16
+ 16x16-bit ROM                                         : 5
+ 16x7-bit ROM                                          : 1
+ 16x8-bit ROM                                          : 8
+ 4x8-bit ROM                                           : 2
+# Adders/Subtractors                                   : 41
+ 10-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 34
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 3
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 463
+ Flip-Flops                                            : 463
+# Comparators                                          : 40
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator greater                              : 34
+ 5-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
+ 7-bit comparator lessequal                            : 1
+ 72-bit comparator not equal                           : 1
+# Multiplexers                                         : 12
+ 1-bit 72-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 26-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 8
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <write_command_0> (without init value) has a constant value of 0 in block <DS18B20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <stringToSend_12_2> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_12_6> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_12_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <stringToSend_12_0> in Unit <transmitControler> is equivalent to the following 4 FFs/Latches, which will be removed : <stringToSend_12_1> <stringToSend_12_3> <stringToSend_12_4> <stringToSend_12_5> 
+WARNING:Xst:1293 - FF/Latch <stringToSend_1_4> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_1_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_7_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_8_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_9_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_10_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_11_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_13_4> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_13_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_20_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_21_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_22_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_23_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_19_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <stringToSend_2_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_3_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_4_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_5_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_14_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_15_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_16_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <stringToSend_17_7> has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <parallelDataOut_7> (without init value) has a constant value of 0 in block <transmitControler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U1/Mtridata_ds_data_bus> (without init value) has a constant value of 0 in block <TOPCZECH>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <stringToSend_1_3> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_1_5> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_1_0> in Unit <transmitControler> is equivalent to the following 2 FFs/Latches, which will be removed : <stringToSend_12_0> <stringToSend_13_0> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_13_3> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_13_5> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_5_4> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_5_5> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_17_4> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_17_5> 
+
+Optimizing unit <TOPCZECH> ...
+WARNING:Xst:1710 - FF/Latch <U1/write_command_2> (without init value) has a constant value of 1 in block <TOPCZECH>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CRC> ...
+
+Optimizing unit <Binary_To_BCD_16b> ...
+
+Optimizing unit <X7seg> ...
+
+Optimizing unit <transmitControler> ...
+INFO:Xst:2261 - The FF/Latch <stringToSend_22_4> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_22_5> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_7_4> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_7_5> 
+INFO:Xst:2261 - The FF/Latch <stringToSend_19_4> in Unit <transmitControler> is equivalent to the following FF/Latch, which will be removed : <stringToSend_19_5> 
+
+Optimizing unit <UART_transmitter> ...
+WARNING:Xst:1710 - FF/Latch <U6/UART_1/transmitter/dataToTx_7> (without init value) has a constant value of 0 in block <TOPCZECH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <U3/dataValid> of sequential type is unconnected in block <TOPCZECH>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOPCZECH, actual ratio is 11.
+FlipFlop U1/state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop U3/i_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 505
+ Flip-Flops                                            : 505
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOPCZECH.ngr
+Top Level Output File Name         : TOPCZECH
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 1219
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 56
+#      LUT2                        : 77
+#      LUT2_D                      : 9
+#      LUT2_L                      : 6
+#      LUT3                        : 254
+#      LUT3_D                      : 18
+#      LUT3_L                      : 6
+#      LUT4                        : 459
+#      LUT4_D                      : 24
+#      LUT4_L                      : 21
+#      MUXCY                       : 74
+#      MUXF5                       : 108
+#      MUXF6                       : 24
+#      MUXF7                       : 11
+#      MUXF8                       : 2
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 505
+#      FD                          : 68
+#      FDC                         : 20
+#      FDE                         : 171
+#      FDR                         : 41
+#      FDRE                        : 141
+#      FDRS                        : 1
+#      FDS                         : 22
+#      FDSE                        : 41
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 5
+#      IOBUF                       : 1
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      497  out of   4656    10%  
+ Number of Slice Flip Flops:            505  out of   9312     5%  
+ Number of 4 input LUTs:                938  out of   9312    10%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  20  out of    232     8%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+MHZ50                              | BUFGP                  | 257   |
+U2/clk_out1                        | BUFG                   | 248   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+R                                  | IBUF                   | 20    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.590ns (Maximum Frequency: 151.738MHz)
+   Minimum input arrival time before clock: 6.109ns
+   Maximum output required time after clock: 19.926ns
+   Maximum combinational path delay: 5.346ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MHZ50'
+  Clock period: 6.557ns (frequency: 152.506MHz)
+  Total number of paths / destination ports: 2518 / 372
+-------------------------------------------------------------------------
+Delay:               6.557ns (Levels of Logic = 10)
+  Source:            U6/UART_1/baudRateGenerator/clockCount_1 (FF)
+  Destination:       U6/UART_1/baudRateGenerator/clockCount_0 (FF)
+  Source Clock:      MHZ50 rising
+  Destination Clock: MHZ50 rising
+
+  Data Path: U6/UART_1/baudRateGenerator/clockCount_1 to U6/UART_1/baudRateGenerator/clockCount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  U6/UART_1/baudRateGenerator/clockCount_1 (U6/UART_1/baudRateGenerator/clockCount_1)
+     LUT1:I0->O            1   0.612   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<1>_rt (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<1> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<2> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<3> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<4> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<5> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<6> (U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_cy<6>)
+     XORCY:CI->O           1   0.699   0.360  U6/UART_1/baudRateGenerator/Madd_clockCount_add0000_xor<7> (U6/UART_1/baudRateGenerator/clockCount_add0000<7>)
+     LUT4:I3->O            2   0.612   0.410  U6/UART_1/baudRateGenerator/clockCount_cmp_eq00007 (U6/UART_1/baudRateGenerator/clockCount_cmp_eq00007)
+     LUT4:I2->O           10   0.612   0.750  U6/UART_1/baudRateGenerator/clockCount_or00001 (U6/UART_1/baudRateGenerator/clockCount_or0000)
+     FDR:R                     0.795          U6/UART_1/baudRateGenerator/clockCount_0
+    ----------------------------------------
+    Total                      6.557ns (4.506ns logic, 2.052ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/clk_out1'
+  Clock period: 6.590ns (frequency: 151.738MHz)
+  Total number of paths / destination ports: 4442 / 391
+-------------------------------------------------------------------------
+Delay:               6.590ns (Levels of Logic = 5)
+  Source:            U1/i_15 (FF)
+  Destination:       U1/Mtrien_ds_data_bus (FF)
+  Source Clock:      U2/clk_out1 rising
+  Destination Clock: U2/clk_out1 rising
+
+  Data Path: U1/i_15 to U1/Mtrien_ds_data_bus
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  U1/i_15 (U1/i_15)
+     LUT4:I0->O            2   0.612   0.410  U1/Mtridata_ds_data_bus_not000111137 (U1/Mtridata_ds_data_bus_not000111137)
+     LUT4:I2->O            9   0.612   0.700  U1/presence_signal_not0001110 (N6)
+     LUT4:I3->O            1   0.612   0.360  U1/Mtridata_ds_data_bus_not00019_SW0 (N255)
+     LUT4_L:I3->LO         1   0.612   0.103  U1/Mtridata_ds_data_bus_not00019 (U1/Mtridata_ds_data_bus_not00019)
+     LUT4:I3->O            1   0.612   0.357  U1/Mtridata_ds_data_bus_not0001155 (U1/Mtridata_ds_data_bus_not0001)
+     FDE:CE                    0.483          U1/Mtrien_ds_data_bus
+    ----------------------------------------
+    Total                      6.590ns (4.057ns logic, 2.533ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MHZ50'
+  Total number of paths / destination ports: 229 / 229
+-------------------------------------------------------------------------
+Offset:              4.808ns (Levels of Logic = 3)
+  Source:            SW<0> (PAD)
+  Destination:       U6/UART_1/baudRateGenerator/baudRateEnable (FF)
+  Destination Clock: MHZ50 rising
+
+  Data Path: SW<0> to U6/UART_1/baudRateGenerator/baudRateEnable
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.106   1.223  SW_0_IBUF (SW_0_IBUF)
+     LUT2_L:I0->LO         1   0.612   0.103  U6/UART_1/baudRateGenerator/clockCount_cmp_eq000032_SW2 (N263)
+     LUT4:I3->O            1   0.612   0.357  U6/UART_1/baudRateGenerator/baudRateEnable_or00001 (U6/UART_1/baudRateGenerator/baudRateEnable_or0000)
+     FDR:R                     0.795          U6/UART_1/baudRateGenerator/baudRateEnable
+    ----------------------------------------
+    Total                      4.808ns (3.125ns logic, 1.683ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U2/clk_out1'
+  Total number of paths / destination ports: 148 / 148
+-------------------------------------------------------------------------
+Offset:              6.109ns (Levels of Logic = 4)
+  Source:            DQ (PAD)
+  Destination:       U1/dataOut_70 (FF)
+  Destination Clock: U2/clk_out1 rising
+
+  Data Path: DQ to U1/dataOut_70
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          75   1.106   1.236  DQ_IOBUF (N229)
+     LUT2_D:I0->O          3   0.612   0.520  U1/state_FSM_FFd9-In11 (N301)
+     LUT4_D:I1->O         35   0.612   1.143  U1/dataOut_mux0000<0>11 (N0)
+     LUT4:I1->O            1   0.612   0.000  U1/dataOut_mux0000<70>1 (U1/dataOut_mux0000<70>)
+     FD:D                      0.268          U1/dataOut_70
+    ----------------------------------------
+    Total                      6.109ns (3.210ns logic, 2.899ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/clk_out1'
+  Total number of paths / destination ports: 810027 / 8
+-------------------------------------------------------------------------
+Offset:              19.926ns (Levels of Logic = 15)
+  Source:            U3/dataOut_13 (FF)
+  Destination:       a_to_g<5> (PAD)
+  Source Clock:      U2/clk_out1 rising
+
+  Data Path: U3/dataOut_13 to a_to_g<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.514   0.862  U3/dataOut_13 (U3/dataOut_13)
+     LUT4:I1->O            5   0.612   0.607  U4/Z_19_mux00051 (U4/Madd_Z_23_20_add0003_cy<0>)
+     LUT4:I1->O            6   0.612   0.599  U4/Z_19_mux000611 (U4/N27)
+     LUT3:I2->O            4   0.612   0.651  U4/Z_17_mux000711 (U4/N8)
+     LUT3:I0->O            3   0.612   0.520  U4/Z_19_mux000711 (U4/N30)
+     LUT3:I1->O            2   0.612   0.410  U4/Madd_Z_23_20_add0005_cy<1>11 (U4/Madd_Z_23_20_add0005_cy<1>)
+     LUT4:I2->O            2   0.612   0.532  U4/Z_23_mux000535 (U4/Madd_Z_27_24_add0003_cy<0>)
+     LUT3:I0->O            3   0.612   0.603  U4/Z_21_mux000611 (U4/N12)
+     LUT4:I0->O            3   0.612   0.603  U4/Z_21_mux00061 (U4/Madd_Z_23_20_add0007_lut<2>)
+     LUT4:I0->O            3   0.612   0.603  U4/Z_22_mux00071 (U4/Madd_Z_23_20_add0008_lut<3>)
+     LUT4:I0->O            3   0.612   0.603  U4/Z_21_mux000911 (U4/N15)
+     LUT4:I0->O            1   0.612   0.387  U4/Z_21_mux00091 (Y<6>)
+     LUT3:I2->O            1   0.612   0.000  U5/Mmux_digit_32 (U5/Mmux_digit_32)
+     MUXF5:I1->O           7   0.278   0.671  U5/Mmux_digit_2_f5_1 (U5/digit<2>)
+     LUT4:I1->O            1   0.612   0.357  U5/Mrom_a_to_g111 (a_to_g_1_OBUF)
+     OBUF:I->O                 3.169          a_to_g_1_OBUF (a_to_g<1>)
+    ----------------------------------------
+    Total                     19.926ns (11.917ns logic, 8.009ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MHZ50'
+  Total number of paths / destination ports: 93 / 12
+-------------------------------------------------------------------------
+Offset:              7.283ns (Levels of Logic = 4)
+  Source:            U5/clkdiv_18 (FF)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      MHZ50 rising
+
+  Data Path: U5/clkdiv_18 to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.514   0.988  U5/clkdiv_18 (U5/clkdiv_18)
+     LUT3:I0->O            1   0.612   0.000  U5/Mmux_digit_3 (U5/Mmux_digit_3)
+     MUXF5:I1->O           7   0.278   0.754  U5/Mmux_digit_2_f5 (U5/digit<0>)
+     LUT4:I0->O            1   0.612   0.357  U5/Mrom_a_to_g111 (a_to_g_1_OBUF)
+     OBUF:I->O                 3.169          a_to_g_1_OBUF (a_to_g<1>)
+    ----------------------------------------
+    Total                      7.283ns (5.185ns logic, 2.098ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.346ns (Levels of Logic = 2)
+  Source:            SW<0> (PAD)
+  Destination:       LED<6> (PAD)
+
+  Data Path: SW<0> to LED<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.106   1.071  SW_0_IBUF (SW_0_IBUF)
+     OBUF:I->O                 3.169          LED_6_OBUF (LED<6>)
+    ----------------------------------------
+    Total                      5.346ns (4.275ns logic, 1.071ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.45 secs
+ 
+--> 
+
+Total memory usage is 276788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :   56 (   0 filtered)
+

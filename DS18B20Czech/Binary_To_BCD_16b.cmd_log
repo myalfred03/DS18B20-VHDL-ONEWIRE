@@ -1,0 +1,2 @@
+vhdtdtfi -prj DS18B20Czech -o "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/Binary_To_BCD_16b.vhi" -module Binary_To_BCD_16b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Binary_To_BCD_16b.vhd 
+vhdtdtfi -prj DS18B20Czech -o "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/Binary_To_BCD_16b.vhi" -module Binary_To_BCD_16b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Binary_To_BCD_16b.vhd 

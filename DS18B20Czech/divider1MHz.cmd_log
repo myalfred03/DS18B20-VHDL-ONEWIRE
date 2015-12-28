@@ -1,0 +1,1 @@
+vhdtdtfi -prj DS18B20Czech -o "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/divider1MHz.vhi" -module divider1MHz -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work divider1MHz.vhd 

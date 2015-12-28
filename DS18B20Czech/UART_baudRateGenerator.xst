@@ -1,0 +1,5 @@
+set -tmpdir "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/xst/projnav.tmp"
+set -xsthdpdir "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/xst"
+elaborate
+-ifn UART_baudRateGenerator.prj
+-ifmt mixed

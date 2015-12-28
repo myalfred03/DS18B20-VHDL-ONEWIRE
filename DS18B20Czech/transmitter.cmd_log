@@ -1,0 +1,1 @@
+vhdtdtfi -prj DS18B20Czech -o "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/transmitter.vhi" -module transmitter -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_transmitter.vhd -lib work UART_baudRateGenerator.vhd -lib work UART.vhd -lib work transmitControler.vhd -lib work transmitter.vhd 

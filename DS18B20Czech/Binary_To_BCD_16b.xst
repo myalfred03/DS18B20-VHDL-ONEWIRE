@@ -1,0 +1,5 @@
+set -tmpdir "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/xst/projnav.tmp"
+set -xsthdpdir "D:/Otros Archivos/DIGITAL II VHDL/DS18B20Czech/xst"
+elaborate
+-ifn Binary_To_BCD_16b.prj
+-ifmt mixed
